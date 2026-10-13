@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hassan Kahie — Freelance Mobile Developer</title>
+  <meta name="description" content="Freelance mobile developer building modern Android, iOS and cross-platform applications." />
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Hassan Kahie — Freelance Mobile Developer" />
+  <meta property="og:description" content="Building modern, scalable mobile applications with clean UI and high performance." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon Placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📱</text></svg>" />
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container header__container">
+      <a href="#hero" class="logo">HK.</a>
+      
+      <nav class="nav" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav__list">
+          <li><a href="#hero" class="nav__link active">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#experience" class="nav__link">Experience</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn--primary nav__cta">Let's Talk →</a>
+      </nav>
+
+      <div class="header__actions">
+        <!-- Dark Mode Toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <!-- Icon will be injected by JS -->
+        </button>
+
+        <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <span class="badge hero__badge">AVAILABLE FOR FREELANCE</span>
+          <h1 class="hero__title">I Build Mobile Apps<br />That People Love to Use.</h1>
+          <p class="hero__text">I'm Hassan Kahie, a Computer Science master's graduate and freelance mobile developer with 2+ years of professional experience building modern, scalable mobile applications.</p>
+          <div class="hero__buttons">
+            <a href="#contact" class="btn btn--primary">Start a Project →</a>
+            <a href="#projects" class="btn btn--secondary">View My Work</a>
+          </div>
+        </div>
+        
+        <div class="hero__visual">
+          <div class="phone-mockup">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="screen-header">
+                <div class="screen-avatar"></div>
+                <div class="screen-greeting">
+                  <span class="screen-greeting-small">Good Morning</span>
+                  <span class="screen-greeting-large">Hassan Kahie</span>
+                </div>
+              </div>
+              <div class="screen-card stat-card">
+                <span>Total Users</span>
+                <strong>+42%</strong>
+              </div>
+              <div class="screen-card chart-card">
+                <div class="chart-bar"></div>
+                <div class="chart-bar"></div>
+                <div class="chart-bar"></div>
+                <div class="chart-bar"></div>
+              </div>
+              <div class="screen-card notification-card">
+                <div class="notif-icon"></div>
+                <div class="notif-text">
+                  <span>New Project Request</span>
+                  <small>FinTrack MVP</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Floating Elements -->
+          <div class="float-card float-1">
+            <span>★★★★★</span>
+            <small>5.0 Rating</small>
+          </div>
+          <div class="float-card float-2">
+            <span>$12,480</span>
+            <small>Revenue</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust / Statistics Section -->
+    <section class="stats" id="stats">
+      <div class="container stats__container">
+        <div class="stat-item" data-target="2">
+          <span class="stat-number">0</span><span class="stat-suffix">+</span>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat-item" data-target="35">
+          <span class="stat-number">0</span><span class="stat-suffix">+</span>
+          <p>Apps Delivered</p>
+        </div>
+        <div class="stat-item" data-target="18">
+          <span class="stat-number">0</span>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat-item" data-target="4.9">
+          <span class="stat-number">0</span><span class="stat-suffix">/5</span>
+          <p>Client Rating</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container about__container">
+        <div class="about__content" data-aos="fade-right">
+          <h2 class="section-title">Turning Ideas Into<br />Powerful Mobile Experiences.</h2>
+          <p>I combine deep Computer Science knowledge with professional experience, UI/UX understanding, mobile development expertise, backend integration, and API development to deliver robust applications.</p>
+          <div class="about__cards">
+            <div class="info-card">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              <div>
+                <h3>Master of Computer Science</h3>
+                <p>University of Technology<br />2022 – 2024</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              <div>
+                <h3>2+ Years</h3>
+                <p>Professional Mobile Development</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about__visual" data-aos="fade-left">
+          <div class="abstract-illustration">
+            <div class="code-block">
+              <span class="code-keyword">class</span> <span class="code-class">Developer</span> {<br/>
+              &nbsp;&nbsp;<span class="code-keyword">constructor</span>() {<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">this</span>.name = <span class="code-string">"Hassan Kahie"</span>;<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">this</span>.passion = <span class="code-string">"Building Apps"</span>;<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">this</span>.experience = <span class="code-number">2</span>;<br/>
+              &nbsp;&nbsp;}<br/>
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">What I Can Build For You</h2>
+        <div class="services__grid">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            <h3>Android App Development</h3>
+            <p>Build native Android applications with modern architecture.</p>
+            <span class="service-arrow">→</span>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+            <h3>Cross-Platform Apps</h3>
+            <p>Develop applications for Android and iOS using cross-platform technologies.</p>
+            <span class="service-arrow">→</span>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            <h3>UI Implementation</h3>
+            <p>Transform Figma designs into polished mobile interfaces.</p>
+            <span class="service-arrow">→</span>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <h3>API Integration</h3>
+            <p>Connect applications with REST APIs, authentication systems and databases.</p>
+            <span class="service-arrow">→</span>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            <h3>App Maintenance</h3>
+            <p>Improve, debug and maintain existing mobile applications.</p>
+            <span class="service-arrow">→</span>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            <h3>MVP Development</h3>
+            <p>Turn startup ideas into functional mobile MVPs.</p>
+            <span class="service-arrow">→</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">Technologies & Skills</h2>
+        <div class="skills__grid" data-aos="zoom-in">
+          <span class="skill-badge">Flutter</span>
+          <span class="skill-badge">React Native</span>
+          <span class="skill-badge">Kotlin</span>
+          <span class="skill-badge">Java</span>
+          <span class="skill-badge">Dart</span>
+          <span class="skill-badge">Firebase</span>
+          <span class="skill-badge">REST API</span>
+          <span class="skill-badge">Git</span>
+          <span class="skill-badge">GitHub</span>
+          <span class="skill-badge">Figma</span>
+          <span class="skill-badge">SQLite</span>
+          <span class="skill-badge">PostgreSQL</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">Selected Work</h2>
+        <div class="projects__grid">
+          <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-image" style="background: linear-gradient(135deg, #2563eb, #06b6d4);"></div>
+            <div class="project-content">
+              <h3>FinTrack</h3>
+              <p>Personal finance mobile application.</p>
+              <div class="tech-badges">
+                <span>Flutter</span><span>Firebase</span><span>REST API</span>
+              </div>
+              <ul class="project-features">
+                <li>Expense tracking</li>
+                <li>Budget management</li>
+                <li>Analytics</li>
+                <li>Authentication</li>
+              </ul>
+              <button class="btn btn--secondary btn--small">View Case Study</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-image" style="background: linear-gradient(135deg, #06b6d4, #10b981);"></div>
+            <div class="project-content">
+              <h3>FitPulse</h3>
+              <p>Fitness tracking application.</p>
+              <div class="tech-badges">
+                <span>React Native</span><span>Node.js</span><span>PostgreSQL</span>
+              </div>
+              <ul class="project-features">
+                <li>Workout tracking</li>
+                <li>Progress charts</li>
+                <li>User profiles</li>
+                <li>Notifications</li>
+              </ul>
+              <button class="btn btn--secondary btn--small">View Case Study</button>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-image" style="background: linear-gradient(135deg, #8b5cf6, #ec4899);"></div>
+            <div class="project-content">
+              <h3>QuickCart</h3>
+              <p>Mobile shopping application.</p>
+              <div class="tech-badges">
+                <span>Flutter</span><span>Firebase</span><span>Stripe</span>
+              </div>
+              <ul class="project-features">
+                <li>Product browsing</li>
+                <li>Shopping cart</li>
+                <li>Payments</li>
+                <li>Order tracking</li>
+              </ul>
+              <button class="btn btn--secondary btn--small">View Case Study</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Process -->
+    <section class="process section" id="process">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">Work Process</h2>
+        <div class="process__grid">
+          <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+            <span class="step-number">01</span>
+            <h3>Discover</h3>
+            <p>Understand the client's business, users and requirements.</p>
+          </div>
+          <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+            <span class="step-number">02</span>
+            <h3>Design</h3>
+            <p>Plan the user experience and interface.</p>
+          </div>
+          <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+            <span class="step-number">03</span>
+            <h3>Develop</h3>
+            <p>Build and test the mobile application.</p>
+          </div>
+          <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+            <span class="step-number">04</span>
+            <h3>Launch</h3>
+            <p>Deploy the application and provide support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-date">2024 – Present</div>
+            <div class="timeline-content">
+              <h3>Freelance Mobile Developer</h3>
+              <p>Building mobile applications for startups, businesses and independent clients.</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+            <div class="timeline-date">2023 – 2024</div>
+            <div class="timeline-content">
+              <h3>Mobile Developer</h3>
+              <p class="company">TechNova Solutions</p>
+              <p>Developed and maintained mobile applications and integrated REST APIs.</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+            <div class="timeline-date">2022 – 2023</div>
+            <div class="timeline-content">
+              <h3>Junior App Developer</h3>
+              <p>Worked on Android applications and internal business tools.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">Client Testimonials</h2>
+        <div class="testimonials__grid">
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <p>"Hassan transformed our idea into a polished mobile product. Communication was excellent throughout the project."</p>
+            <div class="testimonial-author">
+              <strong>Sarah Johnson</strong>
+              <span>Startup Founder</span>
+            </div>
+          </div>
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <p>"The application was delivered on time and performed better than we expected."</p>
+            <div class="testimonial-author">
+              <strong>Michael Carter</strong>
+              <span>Business Owner</span>
+            </div>
+          </div>
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+            <p>"Professional, creative and extremely easy to work with."</p>
+            <div class="testimonial-author">
+              <strong>Daniel Lee</strong>
+              <span>Product Manager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">Pricing Packages</h2>
+        <div class="pricing__grid">
+          <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Starter</h3>
+            <div class="price">$499</div>
+            <p>For simple mobile MVPs.</p>
+            <ul class="pricing-features">
+              <li>3–5 screens</li>
+              <li>Basic navigation</li>
+              <li>API integration</li>
+              <li>Basic support</li>
+            </ul>
+            <a href="#contact" class="btn btn--secondary btn--full">Get Started</a>
+          </div>
+          
+          <div class="pricing-card popular" data-aos="fade-up" data-aos-delay="200">
+            <span class="popular-badge">MOST POPULAR</span>
+            <h3>Professional</h3>
+            <div class="price">$1,199</div>
+            <p>For growing businesses.</p>
+            <ul class="pricing-features">
+              <li>Up to 12 screens</li>
+              <li>Authentication</li>
+              <li>API integration</li>
+              <li>Push notifications</li>
+              <li>Database</li>
+              <li>30 days support</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary btn--full">Get Started</a>
+          </div>
+
+          <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+            <h3>Custom</h3>
+            <div class="price">Let's Talk</div>
+            <p>For complex applications.</p>
+            <ul class="pricing-features">
+              <li>Custom architecture</li>
+              <li>Advanced integrations</li>
+              <li>Backend systems</li>
+              <li>Payment systems</li>
+              <li>Long-term support</li>
+            </ul>
+            <a href="#contact" class="btn btn--secondary btn--full">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section" id="faq">
+      <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">Frequently Asked Questions</h2>
+        <div class="faq__list" data-aos="fade-up">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How long does it take to build an app?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Depending on complexity, a simple MVP takes 3–4 weeks, while a full-featured app can take 2–4 months.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do you build both Android and iOS apps?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, I build native Android apps and cross-platform apps (Flutter/React Native) that work on both iOS and Android.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Can you work with an existing application?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely. I can help improve, debug, add features, or maintain your existing mobile application.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do you provide backend development?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, I can integrate with existing backends or build lightweight backend systems using Firebase, Node.js, or similar technologies.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do you publish apps to the Play Store?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, I handle the entire deployment process, including preparing assets, meeting store guidelines, and publishing to Google Play and Apple App Store.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How do payments work?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Typically, I require a 30% upfront deposit to begin, 40% at the midpoint milestone, and the remaining 30% upon final delivery and approval.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta section" id="cta">
+      <div class="container cta__container" data-aos="zoom-in">
+        <h2>Have an App Idea?<br />Let's Build It.</h2>
+        <p>Tell me about your idea, and let's turn it into a mobile experience your users will love.</p>
+        <a href="#contact" class="btn btn--primary btn--large">Start Your Project →</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container contact__container">
+        <div class="contact__info" data-aos="fade-right">
+          <h2 class="section-title">Let's Work Together</h2>
+          <p>Fill out the form and I'll get back to you within 24 hours.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>hello@hassankahie.dev</span>
+            </div>
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Remote / Worldwide</span>
+            </div>
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Available for selected projects</span>
+            </div>
+          </div>
+        </div>
+        
+        <form class="contact__form" id="contactForm" data-aos="fade-left" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="projectType">Project Type</label>
+              <select id="projectType" name="projectType" required>
+                <option value="">Select...</option>
+                <option value="android">Android App</option>
+                <option value="ios">iOS App</option>
+                <option value="cross-platform">Cross-Platform App</option>
+                <option value="maintenance">App Maintenance</option>
+                <option value="mvp">MVP</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget</label>
+              <select id="budget" name="budget" required>
+                <option value="">Select...</option>
+                <option value="<1k">&lt; $1,000</option>
+                <option value="1k-3k">$1,000 - $3,000</option>
+                <option value="3k-5k">$3,000 - $5,000</option>
+                <option value=">5k">&gt; $5,000</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Project Request →</button>
+          <div class="form-success" id="formSuccess" hidden>
+            <p>✓ Message sent successfully!</p>
+            <p>I'll get back to you within 24 hours.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__brand">
+        <h3>Hassan Kahie</h3>
+        <p>Mobile Developer & Computer Science Master's Graduate</p>
+      </div>
+      <div class="footer__links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer__social">
+        <a href="https://github.com/hassankahie" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="#" aria-label="X (Twitter)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 Hassan Kahie. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
